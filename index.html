@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dessert</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <!-- this link will provide bootsrap css framework    --> 
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="static/css/style.css">
+    
+    <!-- this CDN link will provide bootsrap icon framework   --> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    
+    <!-- container  div tag start here   --> 
+    <style>.box{color: rgb(21, 1, 1);border-style: solid;} </style>
+    <style>.box2{color: blue; border-style: solid;} </style>
+    <style>.box3{color:purple; border-style: solid;} </style>
+</head>
+<body>
+
+<!-- container  div tag start here   --> 
+    <div class="container ">
+      <!-- container  div tag start here   --> 
+
+    
+  <!-- navigatio row tag start here  -->  
+        <div class="row ">  
+  <!-- navigatio row tag start here  --> 
+
+          <!-- navigatio color -->             
+                <nav class="navbar navbar-expand-lg bg-light">
+
+
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"> 
+                        <p class="text-">  </p><strong> DESSERT</strong> </p></a>
+                      
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="about.html">About Us</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact US</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="https://www.google.com/">Logout </a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>   
+                        
+    <!-- Spinner    text color primary start here -->
+  <div class="spinner-border text-primary " style="width: 3rem; height: 3rem;" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-danger" style="width: 3rem; height: 3rem;" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <!-- Spinner    text color primary end here -->
+
+                      </div>
+                    </div> 
+                   <!-- top right search option coding start here -->
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+     <!-- cart icon on top-right -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+                      <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"/>
+                      <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                    </svg>
+                  </nav>
+
+    <!-- navigatio row end  here  --> 
+            </div>
+             <!-- navigatio row end  here  --> 
+
+<!-- second row for product card and product pricing filter  -->
+
+
+               <!-- <div class="row box3">
+
+                  <!-- product details start here-->
+
+ <!-- <div class="col ">
+  <p class="text-dark">  <!--inside product details -->
+
+   <div class="row box3">
+     <div class="col-2 ">
+       <h5> Filter by category</h5> <hr>
+       <a class="anchor" href="#"> All</a><br>
+       <a class="anchor" href="$">Benagli</a><br>
+       <a class="anchor" href="@">South</a><br>
+       <a class="anchor" href="@">North</a><br>
+       <a class="anchor" href="@">Marathi</a>
+
+       <h5> Filter by Price </h5> <hr>
+       <div class="">  <!-- bottam margin mb mb-1 , mb-2 -->
+         <label for="Input1" class="form-label"> MIN</label>
+         <input type="email" class="control" id="Input1" placeholder="99">
+     </div>
+     <div class="">
+         <label for="Input2" class="form-label"> MAX </label>
+         <input type="password" class="control" id="Input2" placeholder="9999">
+ </div>
+ <button type="button" class="btn btn-warning">Go</button>
+
+
+       <h5> Filter by price</h5> <hr>
+       <a class="anchor" href="#"> Low to High</a><br>
+       <a class="anchor" href="$">High to low </a><br> 
+       </div>
+
+<!--  Product detail end here -->
+
+                  
+                       <!--  product card  details  start here -->
+                  
+                  <div class="col-sm-3  p-2  me-1 box ">
+                    <!--  start-->
+
+                  <!--  1st product -->
+                    <div class="card" style="width: 15rem; " >
+                      <img src="static/image/1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Supergirl-Icecream</h5>
+                        <p class="card-text">Yummy.</p>
+                        <a href="#" class="btn btn-primary">Go </a> </div>  </div> 
+                      </div>
+
+                 <!--  start-->
+                     
+                  
+                         <!--  2nd product -->
+                    <div class="col-sm-3 p-2 me-1 box2">
+                      <div class="card" style="width: 15rem;">
+                        <img src="static/image/2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Superboy-Icecream</h5>
+                          <p class="card-text">Delisious </p>
+                          <a href="#" class="btn btn-primary">Go </a> </div>  </div> 
+                      </div> 
+
+                      <!--  3rd  product -->
+                    <div class="col-sm-3 p-2 me-1 box">
+                      <div class="card" ="width: 15rem;">
+                        <img src="static/image/3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Honeycombo</h5>
+                          <p class="card-text">Super</p>
+                          <a href="#" class="btn btn-primary">Go </a> </div>  </div> 
+                      </div> 
+                   <!--  4th   -->
+
+                    <div class="col-sm-3 p-2 me-1 box">
+                      <div class="card" ="width: 15rem;">
+                        <img src="static/image/4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Roses</h5>
+                          <p class="card-text">Super</p>
+                          <a href="#" class="btn btn-primary">Go </a> </div>  </div> 
+                      </div> 
+                    <!--   product details end here  -->
+
+
+ 
+       
+
+   
+ <!--inside product details --> </p>  
+
+
+<!-- product details end here-->
+
+ <!-- container  div tag end here   --> 
+</div>
+<!-- container  div tag end here   --> 
+<br>
+
+<!--   2nd row  end here -->
+                  </div> 
+
+                    
+                 
+               
+  <!--side panle end here   Autoplaying carousels without controls end here-->
+
+  
+
+                <div class="row m-1 ">  <!-- row margin-1 to 6-->
+                   <!-- address  start-->
+                    <div class="col bg-warning me-1  p-2"> 
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building-add" viewBox="0 0 16 16">
+                        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0"/>
+                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6.5a.5.5 0 0 1-1 0V1H3v14h3v-2.5a.5.5 0 0 1 .5-.5H8v4H3a1 1 0 0 1-1-1z"/>
+                        <path d="M4.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+                       </svg>
+                       <p class="text-light">
+                      
+
+                        Address :<br>
+                        Antheia Society <br>
+                        Pimpri <br>
+                        Pune:411018 </p>
+                    </div>
+                     <!-- link start-->
+                    <div class="col bg-danger-subtle">  
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                      </svg>
+
+                     
+                      Links 
+
+                      <br> 
+                        <a class="anchor" href="index.html"> HOME </a> <br>
+                        <a class="anchor" href="about.html"> About </a>  <br>
+                        <a class="anchor" href="contact.html"> Contact  </a>
+                    </div>
+                    <!-- contact detail start-->
+                    
+                    <div class="col bg-danger "> 
+                      
+                      contact details
+                      <p> 
+                        <!-- email icon-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                          <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                          <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                        </svg>
+                        
+                        dessert@example.com <br>
+
+                        <!-- phone  icon-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-outbound" viewBox="0 0 16 16">
+                          <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+
+                      +919172291117<br>
+              <!-- phone  icon-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+
+                    dessert@facebook.com <br>
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"/>
+                    </svg>
+                    http://dessert.linkedin.com/in <br>
+                  
+                  
+                  
+                  </p>  
+                    </div> 
+               
+                </div> </div> 
+            </head> <br> 
+    <!--
+            <img src="static/image/f.png" width="150px" height="150px" class="object-fit-sm-contain border rounded" alt="X">
+   
+            <img src="static/image/ins.png" width="150px" height="150px" class="object-fit-sm-contain border rounded" alt="X">
+            <img src="static/image/t.png" width="300px" height="150px">
+            -->
+         
+            <script src='main.js'></script>
+    <script src="static/js/bootstrap.min.js">  </script> 
+</body>
+
+  <center>
+  <footer> <h3>
+    <!-- smiley code  start-->
+
+    <!-- map start-->
+<div class="Row">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.750830521626!2d73.80670251119156!3d18.630273782411734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b858b30b4a19%3A0x4c88423894e6d744!2sMahindra%20Antheia!5e0!3m2!1sen!2sin!4v1702987945230!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+
+<!-- map end here-->
+
+  <i class="bi bi-apple"></i>  Thank you   <i class="bi bi-apple"></i> 
+
+
+</h3>
+</footer> 
+</center> 
+
+
+
+
+
+
+
+
+</html></html>
+<!--
+introduction - customise - layout-content -forms-components -helpers-utilities -extend-about
+-->
